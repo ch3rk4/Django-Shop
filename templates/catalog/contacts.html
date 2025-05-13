@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты - Django Shop{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Контакты</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Наш адрес</h5>
+                <p class="card-text">г. Москва, ул. Примерная, д. 123</p>
+                
+                <h5 class="card-title mt-4">Телефон</h5>
+                <p class="card-text">+7 (999) 123-45-67</p>
+                
+                <h5 class="card-title mt-4">Email</h5>
+                <p class="card-text">info@djangoshop.ru</p>
+                
+                <h5 class="card-title mt-4">Режим работы</h5>
+                <p class="card-text">Пн-Пт: 9:00 - 18:00<br>Сб-Вс: 10:00 - 16:00</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Свяжитесь с нами</h5>
+                
+                {% if success_message %}
+                <div class="alert alert-success" role="alert">
+                    {{ success_message }}
+                </div>
+                {% endif %}
+                
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

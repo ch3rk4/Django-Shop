@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная - Django Shop{% endblock %}
+
+{% block content %}
+<div class="jumbotron py-5">
+    <h1 class="display-4">Добро пожаловать в Django Shop!</h1>
+    <p class="lead">Ваш надежный интернет-магазин всего, что вам нужно.</p>
+    <hr class="my-4">
+    <p>У нас вы найдете широкий ассортимент товаров по доступным ценам.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Каталог товаров</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Качественные товары</h5>
+                <p class="card-text">Мы тщательно отбираем товары для нашего магазина, гарантируя их высокое качество.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Быстрая доставка</h5>
+                <p class="card-text">Доставляем товары в кратчайшие сроки прямо к вашей двери.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Удобная оплата</h5>
+                <p class="card-text">Принимаем различные способы оплаты для вашего удобства.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
