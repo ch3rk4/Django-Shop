@@ -5,7 +5,7 @@ def home_view(request):
     """
     Контроллер для отображения домашней страницы.
     """
-    return render(request, 'catalog/home.html')
+    return render(request, "catalog/home.html")
 
 
 def contacts_view(request):
@@ -14,15 +14,13 @@ def contacts_view(request):
     """
     success_message = None
 
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        message = request.POST.get("message")
 
-        success_message = 'Ваше сообщение успешно отправлено!'
+        success_message = "Ваше сообщение успешно отправлено!"
 
-    context = {
-        'success_message': success_message
-    }
+    context = {"success_message": success_message}
 
-    return render(request, 'catalog/contacts.html', context)
+    return render(request, "catalog/contacts.html", context)
