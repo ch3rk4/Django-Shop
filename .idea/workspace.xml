@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d64d56c-a4e8-415a-9971-6e15731889ac" name="Changes" comment="create catalog app">
+    <list default="true" id="5d64d56c-a4e8-415a-9971-6e15731889ac" name="Changes" comment="create contollers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/catalog/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,6 +55,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.manage.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "HW1"
   }
@@ -98,13 +100,31 @@
       <option name="project" value="LOCAL" />
       <updated>1747132866222</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create pastes">
+      <option name="closed" value="true" />
+      <created>1747133191267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747133191267</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create contollers">
+      <option name="closed" value="true" />
+      <created>1747133264262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747133264262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="venv" />
     <MESSAGE value="base for work" />
     <MESSAGE value="create catalog app" />
-    <option name="LAST_COMMIT_MESSAGE" value="create catalog app" />
+    <MESSAGE value="create pastes" />
+    <MESSAGE value="create contollers" />
+    <option name="LAST_COMMIT_MESSAGE" value="create contollers" />
   </component>
 </project>
